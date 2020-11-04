@@ -17,7 +17,7 @@ function sumame(numero1, numero2, sumaYmuestra, sumaPorDos) {
 sumame(
     5,
     7,
-    function (dato) {
+    (dato) => {
         console.log("La suma es: ", dato);
     },
     function (dato) {
