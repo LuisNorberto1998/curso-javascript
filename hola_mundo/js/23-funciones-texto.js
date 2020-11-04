@@ -2,7 +2,7 @@
 
 //Transformación de textos
 var numero = 444;
-var texto1 = "Bienvenido al curso de Javascript";
+var texto1 = "          Bienvenido al curso de Javascript      ";
 var texto2 = "Es muy buen curso :v";
 
 var dato = numero.toString();
@@ -22,5 +22,5 @@ var textoTotal = texto1.concat(" " + texto2);
 // console.log(textoTotal);
 
 //Métodos de busqueda
-var busqueda = texto1.includes("Javascript");
+var busqueda = texto1.trim();
 console.log(busqueda);
