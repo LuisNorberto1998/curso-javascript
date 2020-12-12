@@ -46,8 +46,12 @@ document.write("<ul>");
 //     document.write("<li>" + lenguajes[i] + "</li>");
 // }
 
-lenguajes.forEach((elemento, indice, array) => {
-    document.write("<li>" + indice + " - " + elemento + "</li>");
-});
+// lenguajes.forEach((elemento, indice, array) => {
+//     document.write("<li>" + indice + " - " + elemento + "</li>");
+// });
+
+for (let lenguaje in lenguajes) {
+    document.write("<li>" + lenguajes[lenguaje] + "</li>");
+}
 
 document.write("</ul>");
