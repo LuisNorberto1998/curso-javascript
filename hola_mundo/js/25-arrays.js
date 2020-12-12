@@ -11,7 +11,17 @@ var nombres = [
     true,
 ];
 
-var lenguajes = new Array("PHP", "JS", "Python", "Java", "Dart", "C++", "C#");
+var lenguajes = new Array(
+    "PHP",
+    "JS",
+    "Python",
+    "Java",
+    "Dart",
+    "C++",
+    "C#",
+    "Pascal",
+    "COBOL"
+);
 
 // var lenguajes_contar = lenguajes.length;
 // var elemento = parseInt(
@@ -32,8 +42,12 @@ var lenguajes = new Array("PHP", "JS", "Python", "Java", "Dart", "C++", "C#");
 document.write("<h1>Los lenguajes de programación del 2020</h1>");
 document.write("<ul>");
 
-for (var i = 0; i < lenguajes.length; i++) {
-    document.write("<li>" + lenguajes[i] + "</li>");
-}
+// for (var i = 0; i < lenguajes.length; i++) {
+//     document.write("<li>" + lenguajes[i] + "</li>");
+// }
+
+lenguajes.forEach((elemento, indice, array) => {
+    document.write("<li>" + indice + " - " + elemento + "</li>");
+});
 
 document.write("</ul>");
