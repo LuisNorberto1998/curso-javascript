@@ -5,6 +5,9 @@ var peliculas = ["Iron Man", "Capitan America", "Los Vengadores"];
 
 var cine = [categorias, peliculas];
 
+// peliculas.sort();
+peliculas.reverse();
+console.log(peliculas);
 // console.log(cine[0][1]);
 // console.log(cine[1][2]);
 
@@ -17,17 +20,15 @@ var cine = [categorias, peliculas];
 
 // peliculas.pop();
 
-var indice = peliculas.indexOf('Iron Man');
+var indice = peliculas.indexOf("Iron Man");
 
 console.log(indice);
 
-if(indice > -1){
+if (indice > -1) {
     peliculas.splice(indice, 1);
 }
 
 var peliculas_array = peliculas.join();
 
-
 var cadena = "texto1 , texto2, texto3";
-var cadena_array = cadena.split(", ")
-console.log(cadena_array);
+var cadena_array = cadena.split(", ");
