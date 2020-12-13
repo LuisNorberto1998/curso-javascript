@@ -55,3 +55,11 @@ for (let lenguaje in lenguajes) {
 }
 
 document.write("</ul>");
+
+//Busquedas
+var precios = [10, 20, 30, 40]
+
+// var busqueda = lenguajes.findIndex((lenguaje) => lenguaje == "Python");
+var busqueda = precios.some((precio) => precio >= 20);
+
+console.log(busqueda);
